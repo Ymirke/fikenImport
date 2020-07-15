@@ -1,0 +1,35 @@
+{
+  "name": "fikenimport",
+  "version": "0.0.1",
+  "description": "Making it easy to import a list of purchases into fiken.",
+  "main": "/backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "client": "cd client && yarn start",
+    "server": "cd backend && node index.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ymirke/fikenImport.git"
+  },
+  "author": "Ymir Egilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ymirke/fikenImport/issues"
+  },
+  "eslintConfig": {
+    "extends": [
+      "salt",
+      "salt/react",
+      "salt/react/hooks"
+    ]
+  },
+  "homepage": "https://github.com/Ymirke/fikenImport#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "eslint": "^7.4.0",
+    "eslint-config-salt": "^1.0.1"
+  }
+}
