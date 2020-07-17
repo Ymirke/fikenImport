@@ -19,7 +19,7 @@ npm run dev
 ### Company slug
 Company slug is your company identifier in Fiken. You can find it by looking at the url when logged into fiken. 
 
-![Image of company slug](url)
+![Image of company slug](https://github.com/Ymirke/fikenImport/blob/master/company-slug.png)
 
 ### Getting your personal Fiken API key.
 To use the application you need a personal API-token from Fiken. 
