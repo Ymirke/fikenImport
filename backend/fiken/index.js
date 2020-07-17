@@ -20,7 +20,7 @@ const fikenImport = (token, companySlug, csvFilePath) => {
 
         if (!fikenCustomerId) {
           const fikenCustomer = shopifyOrderToFikenCustomer(shopifyPurchase, companySlug);
-          const response = fikenPostCustomer(fikenCustomer, companySlug); // eslint-disable-next-line no-console
+          const response = await fikenPostCustomer(fikenCustomer, companySlug); // eslint-disable-next-line no-console
           if (response.status !== 201) console.log('Post customer did not result in 201.');
           fikenCustomerId = await fikenGetCustomerId(shopifyPurchase, companySlug);
         }

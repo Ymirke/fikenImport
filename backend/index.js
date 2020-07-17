@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-app.post('/api/import', upload.single('file'), async (req, res) => {
+app.post('/api/shopifyFikenImport', upload.single('file'), async (req, res) => {
   const path = await req.file.path;
   const apiKey = await req.body.apiKey;
   const companySlug = await req.body.companySlug;

@@ -8,6 +8,9 @@
     "lint": "eslint .",
     "client": "cd client && npm start",
     "server": "cd backend && node index.js",
+    "installClient": "cd client && yarn",
+    "installBackend": "cd backend && npm install",
+    "intallAll": "npm install && npm run installClient && npm run installBackend",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "repository": {
