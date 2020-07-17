@@ -1,4 +1,4 @@
 # fikenImport
 Making it easy to import a list of purchases into fiken. 
 
-## Hackday project School of Applied Technology.
+## Built in 24 hours during the hack day at School of Applied Technology.
