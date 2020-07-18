@@ -11,7 +11,10 @@ npm run installAll
 npm run dev
 ```
 
-## To use the app you need three things. 
+### Structure: 
+![Image of overview slug](https://github.com/Ymirke/fikenImport/blob/master/structure.png)
+
+## To use the application you need three things. 
 * Fiken Personal API token
 * Fiken Company Slug
 * CSV export of orders form shopify. (Mock data is also included in backend/fiken/)

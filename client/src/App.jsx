@@ -34,7 +34,7 @@ class App extends React.Component {
     data.append('apiKey', this.state.apiKey);
     data.append('companySlug', this.state.companySlug);
     data.append('file', this.state.file);
-    axios.post("http://localhost:3000/api/shopifyFikenImport", data, {
+    axios.post("http://localhost:3000/api/shopify", data, {
     })
   }
 

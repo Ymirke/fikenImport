@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const multer = require('multer');
 const cors = require('cors');
 
-const fiken = require('./fiken');
+const shopifyToFiken = require('./shopifyToFiken');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -23,12 +23,12 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-app.post('/api/shopifyFikenImport', upload.single('file'), async (req, res) => {
-  const path = await req.file.path;
+app.post('/api/shopify', upload.single('file'), async (req, res) => {
+  const filePath = await req.file.path;
   const apiKey = await req.body.apiKey;
   const companySlug = await req.body.companySlug;
-  console.log(path, apiKey, companySlug);
-  fiken.fikenImport(apiKey, companySlug, path);
+  console.log(filePath, apiKey, companySlug);
+  shopifyToFiken.fikenImport(apiKey, companySlug, filePath);
   res.status(201).send();
 });
 
