@@ -12,7 +12,7 @@ npm run dev
 ```
 
 ### Structure: 
-![Image of overview slug](https://github.com/Ymirke/fikenImport/blob/master/structure.png)
+![Image of application fiken workflow](https://github.com/Ymirke/fikenImport/blob/master/structure.png)
 
 ## To use the application you need three things. 
 * Fiken Personal API token
